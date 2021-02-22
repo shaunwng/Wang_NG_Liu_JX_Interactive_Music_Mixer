@@ -1,8 +1,90 @@
+@font-face {
+    font-family: 'bud_boldregular';
+    src: url('../fonts/bud_bold-webfont.woff2') format('woff2'),
+         url('../fonts/bud_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 .hidden{
 	display: none;
 }
 
 body{
-	width: 1920px;
-	height: 1080px;
+	background: url(../images/BG.png) no-repeat;
+	overflow: hidden;
+	position: fixed;
+	width:100%;
+	height:100%;
+	background-size:cover;
 }
+
+#headline h2 {
+	font-size: 
+}
+#leftDrag1{
+	width:191px;
+	height: 191px;
+	background-color: black; 
+	border-radius: 50%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#leftDrag2{
+	width:191px;
+	height: 191px;
+	background-color: black; 
+	border-radius: 50%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#leftDrag3{
+	width:191px;
+	height: 191px;
+	background-color: black; 
+	border-radius: 50%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#leftDrag4{
+	width:191px;
+	height: 191px;
+	background-color: black; 
+	border-radius: 50%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
