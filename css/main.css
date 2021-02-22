@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'bud_boldregular';
+    src: url('../fonts/bud_bold-webfont.woff2') format('woff2'),
+         url('../fonts/bud_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.hidden{
+	display: none;
+}
+
+
+#game_boards{
+	background: url(../images/BG.png) no-repeat;
+	width: 1920px;
+	height: 1080px;
+}
+
+#game_boards h3 {
+	font-family: 'bud_boldregular', Arial, serif;
+	font-size: 73px;
+	color: white;
+	color: transparent;
+    -webkit-text-stroke: 4px white;
+    text-align: center;
+    padding-top: 25px;
+ 
+ 
+}
+
+
+#leftDrag1, #leftDrag2, #leftDrag3, #leftDrag4{
+	width:191px;
+	height: 191px;
+	background-color: black; 
+	border-radius: 50%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 20px;
+}
+
+
+#rightDrag1, #rightDrag2, #rightDrag3, #rightDrag4{
+	width:191px;
+	height: 191px;
+	background-color: black; 
+	border-radius: 50%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 20px;
+}
+
+#left_drag{
+	float: left;
+	margin-left: 88px;
+}
+
+#right_drag{
+	float: right;
+	margin-right: 88px;
+
+}
+
+
+#drop_zone{
+	width:810px ;
+	height:185px;
+	margin-top: 762px;
+	margin-left: 558px;
+}
+
+#left_drop{
+	width:185px;
+	height: 185px;
+	background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid #F21D7A;
+    float: left;
+}
+
+
+
+#right_drop{
+
+	width:185px;
+	height: 185px;
+	background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid #32FFFF;
+    float: right;
+	
+}
+
+
+
+#mid_Screen{
+	float: left;
+	opacity: 76%;
+	margin-left: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
