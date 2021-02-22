@@ -12,19 +12,33 @@
 	display: none;
 }
 
-body{
+/*#backgroundImage{
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+
+}*/
+
+#game_boards{
 	background: url(../images/BG.png) no-repeat;
-	overflow: hidden;
-	position: fixed;
-	width:100%;
-	height:100%;
-	background-size:cover;
+	width: 1920px;
+	height: 1080px;
 }
 
-#headline h2 {
-	font-size: 
+#game_boards h3 {
+	font-family: 'bud_boldregular', Arial, serif;
+	font-size: 73px;
+	color: white;
+	color: transparent;
+    -webkit-text-stroke: 4px white;
+    text-align: center;
+    padding-top: 25px;
+ 
+ 
 }
-#leftDrag1{
+
+
+#leftDrag1, #leftDrag2, #leftDrag3, #leftDrag4{
 	width:191px;
 	height: 191px;
 	background-color: black; 
@@ -32,9 +46,12 @@ body{
 	display:flex;
 	justify-content: center;
 	align-items: center;
+
+	margin-bottom: 20px;
 }
 
-#leftDrag2{
+
+#rightDrag1, #rightDrag2, #rightDrag3, #rightDrag4{
 	width:191px;
 	height: 191px;
 	background-color: black; 
@@ -42,37 +59,50 @@ body{
 	display:flex;
 	justify-content: center;
 	align-items: center;
+
+	margin-bottom: 20px;
 }
 
-#leftDrag3{
-	width:191px;
-	height: 191px;
-	background-color: black; 
-	border-radius: 50%;
-	display:flex;
-	justify-content: center;
-	align-items: center;
+#left_drag{
+	float: left;
+	margin-left: 88px;
 }
 
-#leftDrag4{
-	width:191px;
-	height: 191px;
-	background-color: black; 
-	border-radius: 50%;
-	display:flex;
-	justify-content: center;
-	align-items: center;
+#right_drag{
+	float: right;
+	margin-right: 88px;
+
 }
 
 
+#drop_zone{
+	width:810px ;
+	height:185px;
+	margin-top: 762px;
+	margin-left: 558px;
+}
+
+#left_drop{
+	width:185px;
+	height: 185px;
+	background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid #F21D7A;
+    float: left;
+}
 
 
 
+#right_drop{
 
-
-
-
-
+	width:185px;
+	height: 185px;
+	background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid #32FFFF;
+    float: right;
+	
+}
 
 
 
