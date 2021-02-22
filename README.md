@@ -1,4 +1,3 @@
-# The Fast and the Furious Interactive Music Mixer
 
 <p align="center">
   <a href= "https://github.com/shaunwng/Wang_NG_Liu_JX_Interactive_Music_Mixer.git">
