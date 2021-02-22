@@ -64,7 +64,7 @@ Push to the branch: <code>git push origin my-new-feature</code>
 Creating a new pull request.
 
 ## Project team
-Jiaxu Liu - Chief Designer/Web Development Assistant
+Jiaxu Liu - Chief Designer/Web Development Assistant</br>
 Naigong Wang - Web content Manager/Design Assistant
 
 # MIT License
