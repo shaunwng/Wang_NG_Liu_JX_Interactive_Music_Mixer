@@ -19,7 +19,7 @@
 	height: 1080px;
 }
 
-#game_boards h3 {
+#game_boards h2 {
 	font-family: 'bud_boldregular', Arial, serif;
 	font-size: 73px;
 	color: white;
@@ -107,6 +107,21 @@
 }
 
 
+
+
+/*icon size*/
+#leftDrag1 img {
+	width: 140px;
+	height: 140px;
+}
+#leftDrag2 img, #leftDrag3 img, #leftDrag4 img{
+	width:120px;
+	height:120px;
+}
+#right_drag div img{
+	width: 191px;
+	height: 191px;
+}
 
 
 
