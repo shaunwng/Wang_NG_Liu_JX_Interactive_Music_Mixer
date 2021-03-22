@@ -19,29 +19,26 @@
 
 		<h2>The Fast and the Furious</h2>
 		<div class="dragZone">
-			<audio src="audios/PORSCHE.mp3" loop></audio>
-			<audio src="audios/PORSCHE.mp3" loop></audio>
 			<div id="left_drag">
 				<h3 class="hidden">Drag zone</h3>
 
-				<div id="leftDrag1">
+				<div id="leftDrag1" class="icon">
 					<img id="porsche" class="draggable" src="images/porsche.svg" alt="left drag icon"
-						data-trackref="PORSCHE.mp3" data-phref="">
+						data-trackref="PORSCHE.mp3">
 				</div>
 
-				<div id="leftDrag2">
+				<div id="leftDrag2" class="icon">
 					<img id="ferrari" class="draggable" src="images/ferrari.svg" alt="left drag icon"
-						data-trackref="FERRARI.mp3" data-phref="">
+						data-trackref="FERRARI.mp3">
 				</div>
 
-				<div id="leftDrag3">
-					<img id="bmw" class="draggable" src="images/BMW.svg" alt="left drag icon" data-trackref="BMW.wav"
-						data-phref="">
+				<div id="leftDrag3" class="icon">
+					<img id="bmw" class="draggable" src="images/BMW.svg" alt="left drag icon" data-trackref="BMW.wav">
 				</div>
 
-				<div id="leftDrag4">
+				<div id="leftDrag4" class="icon">
 					<img id="tesla" class="draggable" src="images/Tesla.svg" alt="left drag icon"
-						data-trackref="TESLA.m4a" data-phref="">
+						data-trackref="TESLA.m4a">
 				</div>
 
 			</div>
@@ -50,24 +47,21 @@
 
 			<div id="right_drag">
 
-				<div id="rightDrag1">
-					<img id="eco" class="draggable" src="images/ECO.svg" alt="right drag icon" data-trackref="ECO.m4a"
-						data-phref="">
+				<div id="rightDrag1" class="icon">
+					<img id="eco" class="draggable" src="images/ECO.svg" alt="right drag icon" data-trackref="ECO.m4a">
 				</div>
 
-				<div id="rightDrag2">
-					<img id="s" class="draggable" src="images/S.svg" alt="right drag icon" data-trackref="S.m4a"
-						data-phref="">
+				<div id="rightDrag2" class="icon">
+					<img id="s" class="draggable" src="images/S.svg" alt="right drag icon" data-trackref="S.m4a">
 				</div>
 
-				<div id="rightDrag3">
-					<img id="splus" class="draggable" src="images/S+.svg" alt="right drag icon" data-trackref="S+.m4a"
-						data-phref="">
+				<div id="rightDrag3" class="icon">
+					<img id="splus" class="draggable" src="images/S+.svg" alt="right drag icon" data-trackref="S+.m4a">
 				</div>
 
-				<div id="rightDrag4">
+				<div id="rightDrag4" class="icon">
 					<img id="corsa" class="draggable" src="images/CORSA.svg" alt="right drag icon"
-						data-trackref="CORSA.m4a" data-phref="">
+						data-trackref="CORSA.m4a">
 				</div>
 			</div>
 
@@ -77,7 +71,7 @@
 
 		<div id="mid_Screen">
 			<img src="images/windshield.jpg" alt="windshield image">
-			<button class="resetBtn">RESET</button>
+			<button id="resetBtn" type="reset" onclick="document.location.reload()">RESET</button>
 		</div>
 
 		<!-- <div class="audio-controls">

@@ -9,8 +9,7 @@
     rightDrop = document.querySelector(".right_drop"),
     dropZones = document.querySelectorAll('.dropZone'),
     dragZone = document.querySelector(".dragZone"),
-    resetButton = document.querySelector(".resetBtn"),
-    // -------- //
+    resetButton = document.querySelector("#resetBtn"),
     porsche = document.querySelector("#porsche"),
     ferrari = document.querySelector("#ferrari"),
     bmw = document.querySelector("#bmw"),
@@ -20,17 +19,9 @@
     splus = document.querySelector("#splus"),
     corsa = document.querySelector("#corsa");
 
-
-
-
-
-
-
   // function go in the middle 
-
-
-
-  // -------------new end  ---------------------------------//
+  let icons = document.querySelectorAll(".icon");
+  // ---------------------------------------------//
   function dragStart(event) {
     console.log('started draggin');
     event.dataTransfer.setData("savedID", this.id);
@@ -59,7 +50,7 @@
       porscheAudio.currentTime = 0;
       porscheAudio.play();
       porscheAudio.loop = true;
-      porscheAudio.volume = 0.3;
+      porscheAudio.volume = 0.2;
       console.log("Porsche engine is turn on!");
     } else if (targetID == 'ferrari') {
       let ferrariAudio = document.createElement('audio');
@@ -69,7 +60,7 @@
       ferrariAudio.currentTime = 0;
       ferrariAudio.play();
       ferrariAudio.loop = true;
-      ferrariAudio.volume = 0.3;
+      ferrariAudio.volume = 0.2;
       console.log("Ferrari engine is turn on!");
     } else if (targetID == 'bmw') {
       let bmwAudio = document.createElement('audio');
@@ -79,7 +70,7 @@
       bmwAudio.currentTime = 0;
       bmwAudio.play();
       bmwAudio.loop = true;
-      bmwAudio.volume = 0.3;
+      bmwAudio.volume = 0.2;
       console.log("BMW engine is turn on!");
     } else if (targetID == 'tesla') {
       let teslaAudio = document.createElement('audio');
@@ -89,7 +80,7 @@
       teslaAudio.currentTime = 0;
       teslaAudio.play();
       teslaAudio.loop = true;
-      teslaAudio.volume = 0.3;
+      teslaAudio.volume = 0.2;
       console.log("Tesla engine is turn on!");
     } else if (targetID == 'eco') {
       let ecoAudio = document.createElement('audio');
@@ -127,12 +118,26 @@
       corsaAudio.play();
       corsaAudio.loop = true;
       corsaAudio.volume = 1.0;
-    } else {
+    }
+    else {
       return;
     }
 
   }
-
+  // reset function 
+  function reset() {
+    console.log("reset function in");
+    dropZones.forEach(zone => {
+      if (zone.firstChild) {
+        zone.removeChild(zone.firstChild);
+      }
+    });
+    icons.forEach((piece, index) => {
+      if (piece.childElementCount == 0) {
+        piece.appendChild(dragImages[index]);
+      }
+    });
+  }
 
   // event handling at the bottom
 
@@ -152,6 +157,6 @@
     zone.addEventListener("drop", dropped);
   })
 
-
+  resetButton.addEventListener('click', reset);
 
 })();

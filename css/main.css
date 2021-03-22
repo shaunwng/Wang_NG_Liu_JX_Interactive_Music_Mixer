@@ -12,6 +12,7 @@
 	display: none;
 }
 body{
+	width: 100%;
 	height: 100vh;
 }
 
@@ -129,7 +130,7 @@ body{
 	position: relative;
 }
 /* -----reset button----- */
-.resetBtn {
+#resetBtn {
 	position: absolute;
 	top: 450px;
 	left: 480px;
@@ -139,7 +140,7 @@ body{
 	border: solid white 3px;
 	border-radius: 10px;
 }
-.resetBtn:hover {
+#resetBtn:hover {
 	cursor: pointer;
 	background-color:yellow;
 	color: tomato;
