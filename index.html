@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Interactive Music Mixer</title>
 	<!-- Reset first, order matters -->
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -17,51 +18,76 @@
 
 
 		<h2>The Fast and the Furious</h2>
-		<!-- drag part -->
-		<div id="left_drag">
-			<h3 class="hidden">Drag zone</h3>
+		<div class="dragZone">
+			<audio src="audios/PORSCHE.mp3" loop></audio>
+			<audio src="audios/PORSCHE.mp3" loop></audio>
+			<div id="left_drag">
+				<h3 class="hidden">Drag zone</h3>
 
-			<div id="leftDrag1">
-				<img id="lDrag1" class="draggable" src="images/porsche.svg" alt="left drag icon">
+				<div id="leftDrag1">
+					<img id="porsche" class="draggable" src="images/porsche.svg" alt="left drag icon"
+						data-trackref="PORSCHE.mp3" data-phref="">
+				</div>
+
+				<div id="leftDrag2">
+					<img id="ferrari" class="draggable" src="images/ferrari.svg" alt="left drag icon"
+						data-trackref="FERRARI.mp3" data-phref="">
+				</div>
+
+				<div id="leftDrag3">
+					<img id="bmw" class="draggable" src="images/BMW.svg" alt="left drag icon" data-trackref="BMW.wav"
+						data-phref="">
+				</div>
+
+				<div id="leftDrag4">
+					<img id="tesla" class="draggable" src="images/Tesla.svg" alt="left drag icon"
+						data-trackref="TESLA.m4a" data-phref="">
+				</div>
+
 			</div>
 
-			<div id="leftDrag2">
-				<img id="lDrag2" class="draggable" src="images/ferrari.svg" alt="left drag icon">
-			</div>
 
-			<div id="leftDrag3">
-				<img id="lDrag3" class="draggable" src="images/BMW.svg" alt="left drag icon">
-			</div>
 
-			<div id="leftDrag4">
-				<img id="lDrag4" class="draggable" src="images/Tesla.svg" alt="left drag icon">
+			<div id="right_drag">
+
+				<div id="rightDrag1">
+					<img id="eco" class="draggable" src="images/ECO.svg" alt="right drag icon" data-trackref="ECO.m4a"
+						data-phref="">
+				</div>
+
+				<div id="rightDrag2">
+					<img id="s" class="draggable" src="images/S.svg" alt="right drag icon" data-trackref="S.m4a"
+						data-phref="">
+				</div>
+
+				<div id="rightDrag3">
+					<img id="splus" class="draggable" src="images/S+.svg" alt="right drag icon" data-trackref="S+.m4a"
+						data-phref="">
+				</div>
+
+				<div id="rightDrag4">
+					<img id="corsa" class="draggable" src="images/CORSA.svg" alt="right drag icon"
+						data-trackref="CORSA.m4a" data-phref="">
+				</div>
 			</div>
 
 		</div>
+		<!-- drag part -->
+
 
 		<div id="mid_Screen">
 			<img src="images/windshield.jpg" alt="windshield image">
+			<button class="resetBtn">RESET</button>
 		</div>
 
+		<!-- <div class="audio-controls">
+			<h3 class="hidden">button</h3>
+			<button>PLAY</button>
+			<button>STOP</button>
+			<BUtton>REWIND</BUtton>
 
-		<div id="right_drag">
-
-			<div id="rightDrag1">
-				<img id="rDrag1" class="draggable" src="images/ECO.svg" alt="right drag icon">
-			</div>
-
-			<div id="rightDrag2">
-				<img id="rDag2" class="draggable" src="images/S.svg" alt="right drag icon">
-			</div>
-
-			<div id="rightDrag3">
-				<img id="rDrag3" class="draggable" src="images/S+.svg" alt="right drag icon">
-			</div>
-
-			<div id="rightDrag4">
-				<img id="rDrag4" class="draggable" src="images/CORSA.svg" alt="right drag icon">
-			</div>
-		</div>
+			<input id="volume-control" type="range" min="0" max="100" step="1">
+		</div> -->
 
 
 
