@@ -11,7 +11,10 @@
 .hidden{
 	display: none;
 }
-
+body{
+	width: 100%;
+	height: 100vh;
+}
 
 #game_boards{
 	background: url(../images/BG.png) no-repeat;
@@ -76,18 +79,21 @@
 	margin-left: 558px;
 }
 
-#left_drop{
+.left_drop{
 	width:185px;
 	height: 185px;
 	background-color: transparent;
     border-radius: 50%;
     border: 5px solid #F21D7A;
     float: left;
+	display: table-cell;
+	line-height: 185px;
+	text-align:center;  
 }
 
 
 
-#right_drop{
+.right_drop{
 
 	width:185px;
 	height: 185px;
@@ -95,17 +101,50 @@
     border-radius: 50%;
     border: 5px solid #32FFFF;
     float: right;
+	display: table-cell;
+	line-height: 185px;
+	text-align:center;
 	
 }
 
-
+/* fix drop zone image */
+.left_drop img{
+	height: 85% !important;
+	width: 85% !important;
+	vertical-align:middle;
+	text-align:center;
+	
+}
+.right_drop img{
+	height:95% !important;
+	width: 95% !important;
+	vertical-align:middle;
+	text-align:center;
+	
+}
 
 #mid_Screen{
 	float: left;
 	opacity: 76%;
 	margin-left: 130px;
+	position: relative;
 }
-
+/* -----reset button----- */
+#resetBtn {
+	position: absolute;
+	top: 450px;
+	left: 480px;
+	font-size: 50px;
+	color:white;
+	background-color: transparent;
+	border: solid white 3px;
+	border-radius: 10px;
+}
+#resetBtn:hover {
+	cursor: pointer;
+	background-color:yellow;
+	color: tomato;
+}
 
 
 
@@ -124,12 +163,25 @@
 }
 
 
-
-
-
-
-
-
+/* audio controls */
+.audio-controls{
+	float: left;
+	margin-left: 463px;
+	margin-top: 100px;
+}
+.audio-controls button{
+	background-color: tomato;
+	color: white;
+	border-radius: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	margin-right: 50px;
+}
+.audio-controls button:hover{
+	cursor: pointer;
+	background-color:yellow;
+	color: tomato;
+}
 
 
 
