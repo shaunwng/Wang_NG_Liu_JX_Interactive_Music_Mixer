@@ -137,6 +137,7 @@ html{
 	opacity: 80%;
 	background-image: url(../images/mid-screen.png);
 }
+
 /* -----reset button----- */
 #resetBtn {
 	margin-top: 290px;
@@ -170,30 +171,59 @@ html{
 }
 
 
-/* audio controls */
-.audio-controls{
-	display: flex;
-	width: 600px;
-	margin: 0 auto;
-	margin-left: 350px;
-	justify-content: space-evenly;
+/* beat controls button */
+#game_boards{
+position: relative;
 }
-.audio-controls button{
-	background-color: tomato;
-	color: white;
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
-	border-style:none;
-	font-size: 20px;
-	font-weight: bold;
+.beatControl{
+	position: absolute;
+	width: 65%;
+	margin:  0 auto;
+	text-align: center;
+	top: 68%;
+	left: 39%;
+	
+	
+}
+.beatControl ul{
+	display: flex;
+	flex-direction: row;
+	
+}
+.beatControl ul li img{
+	width: 60px;
+	height: 60px;
+	margin-left: 25px;
 	transition: all 0.3s ease-in-out;
 }
-.audio-controls button:hover{
+.beatControl ul li img:hover {
 	cursor: pointer;
-	background-color:yellow;
-	color: tomato;
+	filter: invert(0.9);
 }
+
+.mute{
+	width: 100px;
+	height: 40px;
+	margin-left: 20px;
+	margin-top: 12px;
+	border-style: none;
+	border-radius: 20px;
+	font-size: 20px;
+	font-weight: bolder;
+	background-color: #CF0A2C;
+	color: white;
+	transition: all 0.6s ease-in-out;
+}
+.mute:hover{
+	cursor: pointer;
+	border-radius:30px;
+	color: #CF0A2C;
+  	box-shadow: inset -100px 0 0 0 #13294b,
+    			inset 100px 0 0 0 #13294b;
+}
+
+
+
 
 
 
