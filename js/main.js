@@ -8,7 +8,11 @@
     leftDrop = document.querySelector(".left_drop"),
     rightDrop = document.querySelector(".right_drop"),
     dropZones = document.querySelectorAll('.dropZone'),
-    dragZone = document.querySelector(".dragZone");
+    dragZone = document.querySelector(".dragZone"),
+    playButton = document.querySelector(".playButton"),
+    stopButton = document.querySelector(".stopButton"),
+    rewindButton = document.querySelector(".rewindButton");
+  let globalPaused = false;
   // resetButton = document.querySelector("#resetBtn")
   // porsche = document.querySelector("#porsche"),
   // ferrari = document.querySelector("#ferrari"),
@@ -44,10 +48,37 @@
     if (!audioPlay) { return; }
     audioPlay.currentTime = 0;
     audioPlay.play(),
-    audioPlay.volume = 0.6;
+      audioPlay.volume = 0.6;
 
   }
+  let theAudio = document.querySelector("audio");
+  function playAudio() {
+    if (globalPaused) {
+      console.log('paused');
+      resumeTrack();
+      return;
 
+    }
+  }
+  function resumeTrack() {
+    globalPaused = false;
+    theAudio.play();
+  }
+
+  function stopAudio() {
+    theAudio.pause();
+    document.querySelector('audio').pause()
+
+    globalPaused = true;
+  }
+
+  function rewindAudio() {
+
+    document.querySelector('audio').currentTime = 0;
+
+    document.querySelector('audio').play()
+
+  }
 
 
 
@@ -154,6 +185,8 @@
     zone.addEventListener("drop", dropped);
   })
 
-  // resetButton.addEventListener('click', reset);
+  playButton.addEventListener("click", playAudio);
+  stopButton.addEventListener("click", stopAudio);
+  rewindButton.addEventListener("click", rewindAudio);
 
 })();

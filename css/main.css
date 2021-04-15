@@ -172,17 +172,22 @@ html{
 
 /* audio controls */
 .audio-controls{
-	float: left;
-	margin-left: 463px;
-	margin-top: 100px;
+	display: flex;
+	width: 600px;
+	margin: 0 auto;
+	margin-left: 350px;
+	justify-content: space-evenly;
 }
 .audio-controls button{
 	background-color: tomato;
 	color: white;
-	border-radius: 20px;
-	font-size: 30px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border-style:none;
+	font-size: 20px;
 	font-weight: bold;
-	margin-right: 50px;
+	transition: all 0.3s ease-in-out;
 }
 .audio-controls button:hover{
 	cursor: pointer;
