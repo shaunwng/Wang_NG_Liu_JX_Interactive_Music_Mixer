@@ -14,9 +14,9 @@
 
 	<h2 class="hidden">Interactive Music Mixer</h2>
 
-	
-		
-	
+
+
+
 	<section id="game_boards">
 
 
@@ -28,20 +28,22 @@
 
 				<div id="leftDrag1" class="icon">
 					<img id="porsche" class="draggable" src="images/porsche.svg" alt="left drag icon"
-						data-value="porsche">
+						data-value="porsche" data-imageref="0">
 				</div>
 
 				<div id="leftDrag2" class="icon">
 					<img id="ferrari" class="draggable" src="images/ferrari.svg" alt="left drag icon"
-						data-value="ferrari">
+						data-value="ferrari" data-imageref="1">
 				</div>
 
 				<div id="leftDrag3" class="icon">
-					<img id="bmw" class="draggable" src="images/BMW.svg" alt="left drag icon" data-value="bmw">
+					<img id="bmw" class="draggable" src="images/BMW.svg" alt="left drag icon" data-value="bmw"
+						data-imageref="2">
 				</div>
 
 				<div id="leftDrag4" class="icon">
-					<img id="tesla" class="draggable" src="images/Tesla.svg" alt="left drag icon" data-value="tesla">
+					<img id="tesla" class="draggable" src="images/Tesla.svg" alt="left drag icon" data-value="tesla"
+						data-imageref="3">
 				</div>
 
 			</div>
@@ -76,6 +78,14 @@
 		</div>
 
 
+		<div class=" beatControl">
+			<ul>
+				<li><img class="playButton" src="images/play-button.svg" alt="play-button"></li>
+				<li><img class="pauseButton" src="images/pause-button.svg" alt="pause-button"></li>
+				<li><img class="rewindButton" src="images/rewind.svg" alt="rewind"></li>
+			</ul>
+		</div>
+
 		<div id="drop_zone">
 			<h3 class="hidden">Drop zone</h3>
 			<!-- drop zone -->
@@ -85,14 +95,14 @@
 
 	</section>
 
-		<audio loop data-value="porsche" src="audio/PORSCHE.mp3"></audio>
-		<audio data-value="ferrari" src="audio/FERRARI.mp3"></audio>
-		<audio loop data-value="bmw" src="audio/BMW.mp3"></audio>
-		<audio data-value="tesla" src="audio/TESLA.mp3"></audio>
-		<audio data-value="eco" src="audio/ECO.m4a"></audio>
-		<audio data-value="s" src="audio/S.mp3"></audio>
-		<audio data-value="splus" src="audio/S+.mp3"></audio>
-		<audio data-value="corsa" src="audio/CORSA.mp3"></audio>
+	<audio loop data-value="porsche" src="audio/PORSCHE.mp3"></audio>
+	<audio loop data-value="ferrari" src="audio/FERRARI.mp3"></audio>
+	<audio loop data-value="bmw" src="audio/BMW.mp3"></audio>
+	<audio loop data-value="tesla" src="audio/TESLA.mp3"></audio>
+	<audio loop data-value="eco" src="audio/ECO.mp3"></audio>
+	<audio loop data-value="s" src="audio/S.mp3"></audio>
+	<audio loop data-value="splus" src="audio/S+.mp3"></audio>
+	<audio loop data-value="corsa" src="audio/CORSA.mp3"></audio>
 
 	<script src="js/main.js"></script>
 </body>
